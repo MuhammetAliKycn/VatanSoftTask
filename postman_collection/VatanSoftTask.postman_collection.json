@@ -1,0 +1,899 @@
+{
+	"info": {
+		"_postman_id": "e90f1946-283d-45e2-a2bd-aef5748fafd7",
+		"name": "VatanSoftTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18532741",
+		"_collection_link": "https://lunar-eclipse-437040.postman.co/workspace/0f440428-f4c3-4224-800a-53af0e0a8328/collection/18532741-e90f1946-283d-45e2-a2bd-aef5748fafd7?action=share&source=collection_link&creator=18532741"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "te2st@gmail.com2",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "05312853044",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/lenovo/Desktop/silver_plan.jpg"
+								},
+								{
+									"key": "password",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/register"
+					},
+					"response": [
+						{
+							"name": "TRUE",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "te2st@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "05312853052",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/lenovo/Desktop/silver_plan.jpg"
+										},
+										{
+											"key": "password",
+											"value": "test",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/register"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:07:21 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:07:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.20"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Kayıt Başarılı\",\n    \"data\": {\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzA1MDgyODQxLCJleHAiOjE3MDUwODY0NDEsIm5iZiI6MTcwNTA4Mjg0MSwianRpIjoiWFFsdkZ2eW1Zd2g1dUIwRyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.rovBJSi8DSyA8MLr70DQCHwYjEfQahri293bvevHEp4\",\n        \"user_info\": {\n            \"id\": 2,\n            \"username\": \"test\",\n            \"email\": \"te2st@gmail.com\",\n            \"phone\": \"05312853052\",\n            \"image\": \"/storage/users/profile-image/S4ZjM1FqfkuvDaHDRTZmOdfswihDvlL92iQOmJEK.jpg\"\n        }\n    }\n}"
+						},
+						{
+							"name": "FALSE",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "te2st@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "05312853052",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/lenovo/Desktop/silver_plan.jpg"
+										},
+										{
+											"key": "password",
+											"value": "test",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/register"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:09:22 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:09:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.20"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"The email has already been taken.\",\n    \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "test3",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/login"
+					},
+					"response": [
+						{
+							"name": "TRUE",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "test",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:10:26 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:10:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.20"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Giriş Başarılı\",\n    \"data\": {\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDgzMDI2LCJleHAiOjE3MDUwODY2MjYsIm5iZiI6MTcwNTA4MzAyNiwianRpIjoia2JBN0pCQW9MU1VpU3ppNyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.EJZlOg-fLkACdCXo2vED0XTLdwG1mtY4Eujq4r2-6rM\",\n        \"user_info\": {\n            \"id\": 1,\n            \"username\": \"test\",\n            \"email\": \"test@gmail.com\",\n            \"phone\": \"05312853058\",\n            \"image\": \"/storage/users/profile-image/81nVWOMY1tcTVA3Hw5ao7YVBn5zOBIpIcu5qab8X.jpg\"\n        }\n    }\n}"
+						},
+						{
+							"name": "FALSE",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "test3",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:10:37 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:10:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.20"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"Giriş başarısız\",\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sms",
+			"item": [
+				{
+					"name": "Send sms",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDgyNDU1LCJleHAiOjE3MDUwODYwNTUsIm5iZiI6MTcwNTA4MjQ1NSwianRpIjoiT1I3Z29nS0N4dFVqWFFLVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.eBfXjTcTphnMETA65ONzZaTHbKIqwBtd5epkZioXivk"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "number",
+									"value": "05312853058",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "test mesajı",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/sms/send"
+					},
+					"response": [
+						{
+							"name": "TRUE",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "number",
+											"value": "05312853058",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "test mesajı",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/sms/send"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:11:57 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:11:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.20"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"sms gönderildi.\",\n    \"data\": {}\n}"
+						},
+						{
+							"name": "FALSE",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "number",
+											"value": "05312853058",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "test mesajı",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/sms/send"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:13:30 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:13:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.20"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"The message field is required.\",\n    \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Sms (with filter)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDgyNDU1LCJleHAiOjE3MDUwODYwNTUsIm5iZiI6MTcwNTA4MjQ1NSwianRpIjoiT1I3Z29nS0N4dFVqWFFLVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.eBfXjTcTphnMETA65ONzZaTHbKIqwBtd5epkZioXivk"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/sms/report?send_time=2024-01-12",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"sms",
+								"report"
+							],
+							"query": [
+								{
+									"key": "send_time",
+									"value": "2024-01-12"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "TRUE",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/sms/report?send_time=2024-01-12",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"sms",
+										"report"
+									],
+									"query": [
+										{
+											"key": "send_time",
+											"value": "2024-01-12"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:13:50 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:13:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.20"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Sms raporları listelendi.\",\n    \"data\": [\n        {\n            \"id\": 3,\n            \"user_id\": 1,\n            \"number\": \"05312853058\",\n            \"message\": \"test mesaj...\",\n            \"send_time\": \"2024-01-12 09:05:33\"\n        },\n        {\n            \"id\": 5,\n            \"user_id\": 1,\n            \"number\": \"05312853058\",\n            \"message\": \"test mesaj...\",\n            \"send_time\": \"2024-01-12 18:06:31\"\n        },\n        {\n            \"id\": 6,\n            \"user_id\": 1,\n            \"number\": \"05312853058\",\n            \"message\": \"test mesaj...\",\n            \"send_time\": \"2024-01-12 18:11:57\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Sms Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNzA1MDgyODQxLCJleHAiOjE3MDUwODY0NDEsIm5iZiI6MTcwNTA4Mjg0MSwianRpIjoiWFFsdkZ2eW1Zd2g1dUIwRyIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.rovBJSi8DSyA8MLr70DQCHwYjEfQahri293bvevHEp4"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://127.0.0.1:8000/api/sms/1/detail"
+					},
+					"response": [
+						{
+							"name": "TRUE",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://127.0.0.1:8000/api/sms/1/detail"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:14:12 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:14:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.20"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Sms detayı listelendi.\",\n    \"data\": {\n        \"id\": 1,\n        \"user_id\": 1,\n        \"username\": \"test\",\n        \"number\": \"05312853058\",\n        \"message\": \"test mesajı\",\n        \"send_time\": \"2024-01-09 09:05:06\"\n    }\n}"
+						},
+						{
+							"name": "FALSE",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://127.0.0.1:8000/api/sms/122/detail"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:15:51 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 18:15:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.20"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"Sms detayı bulunamadı.\",\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
